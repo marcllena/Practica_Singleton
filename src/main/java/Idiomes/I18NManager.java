@@ -1,3 +1,5 @@
+package Idiomes;
+
 import java.util.HashMap;
 import java.util.ResourceBundle;
 
