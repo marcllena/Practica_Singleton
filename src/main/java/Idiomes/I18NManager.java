@@ -18,11 +18,14 @@ public class I18NManager {
         data= new HashMap<String, ResourceBundle>();
     }
 
-    public String GetText(String key,ResourceBundle language){
+    public String GetText(String key,String language){
+//        log.info("key:"+key+" "+" language"+language);
         ResourceBundle rb= data.get(language);
         if(rb==null)
         {
             rb=ResourceBundle.getBundle("I18N."+language);
+            data.put(language, rb);
         }
+        return rb.getString(key);
     }
 }
