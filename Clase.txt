@@ -1,4 +1,0 @@
-Rombo asociación 
-Triangulo herencia
-Disjoint Es exclusivo o uno o el otro
-Complete, tiene que decidir uno, 
