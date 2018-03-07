@@ -14,6 +14,13 @@ public class I18NManager {
 
     private I18NManager() {
         data= new HashMap<String, ResourceBundle>();
+    }
 
+    public String GetText(String key,ResourceBundle language){
+        ResourceBundle rb= data.get(language);
+        if(rb==null)
+        {
+            rb=ResourceBundle.getBundle();
+        }
     }
 }
