@@ -22,7 +22,7 @@ public class I18NManager {
         ResourceBundle rb= data.get(language);
         if(rb==null)
         {
-            rb=ResourceBundle.getBundle();
+            rb=ResourceBundle.getBundle("I18N."+language);
         }
     }
 }
